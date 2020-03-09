@@ -6,7 +6,9 @@
 //  Copyright © 2020 Zac Cripps. All rights reserved.
 //
 //the struct contains all the parameters that make for the objects in "Potato"
-struct Potato {
+import Foundation
+struct Potato : Identifiable{
+    var id = UUID()
     let name:String
     let scienceName:String
     let family:String
