@@ -13,12 +13,20 @@ struct ListView: View {
     var potatos: [Potato]
     
     var body: some View {
+        NavigationView{
+            
         List(potatos){potato in
-            Text(potato.name)
-                
+            NavigationLink(destination: ContentView(potato: potato)){
+                Section{
+                    Text(potato.name)
+                    
+                }
+            }.navigationBarTitle(Text("Potatos"))
+            }
+            
+        }
         }
     }
-}
 
 struct ListView_Previews: PreviewProvider {
     //link the struct to the static view

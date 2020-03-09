@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     //creats the object for potatos with the following parameters
     //this information is exclusivley used for the simulation
-    let potato = Potato(name: "Kipfler", family:"Sweet Potato", weight: "20grams", scienceName: "", nutrition: "manganese, potassium and vitamin C")
+    let potatos = [Potato(name: "Kipfler", family:"Sweet Potato", weight: "20grams", scienceName: "", nutrition: "manganese, potassium and vitamin C")]
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents which for milestone is the objects of struct potato.
-        let contentView = ContentView(potato: potato)
+        let contentView = ListView(potatos:potatos)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
