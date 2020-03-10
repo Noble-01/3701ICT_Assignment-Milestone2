@@ -32,6 +32,7 @@ struct ListView_Previews: PreviewProvider {
     //link the struct to the static view
     //creats the object with the following parameters
     static var previews: some View {
-        ListView(potatos: [Potato(name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C")])
+        ListView(potatos: [Potato(name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C"),
+            Potato(name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C")])
     }
 }
