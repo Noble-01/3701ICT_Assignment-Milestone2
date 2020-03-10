@@ -24,9 +24,12 @@ struct ListView: View {
                     .frame(width: 80.0, height: 80.0)
                     .shadow(radius: 10)
                         .scaledToFit()
+                        Text(potato.name).fontWeight(.bold)
+                        Text(potato.scienceName)                .font(.subheadline)
+                        .fontWeight(.light)
+                        .italic()
                         
-                        Text(potato.name)
-                        Text(potato.scienceName)
+ 
                     }
 
                     
@@ -43,6 +46,6 @@ struct ListView_Previews: PreviewProvider {
     //creats the object with the following parameters
     static var previews: some View {
         ListView(potatos: [Potato( name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato"),
-            Potato( name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato")])
+       Potato( name: "Vitelotte", family:"Starch Potato", weight: "300grams", scienceName: "Solanum Vitelotte", nutrition: "protien, potassium and vitamin C", image: "potato1")])
     }
 }

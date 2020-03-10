@@ -65,12 +65,13 @@ struct ContentView: View {
                 }
             }
         }
+        .padding(.bottom, 150.0)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     //link the struct to the static view
-    //creats the object with the following parameters
+    //creates the object with the following parameters
     static var previews: some View {
         ContentView(potato: Potato( name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato"))
     }
