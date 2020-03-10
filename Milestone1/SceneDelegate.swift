@@ -14,7 +14,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     //creats the object for potatos with the following parameters
     //this information is exclusivley used for the simulation
-    let potatos = [Potato(name: "Kipfler", family:"Sweet Potato", weight: "20grams", scienceName: "", nutrition: "manganese, potassium and vitamin C"),Potato(name: "Kipfler", family:"Sweet Potato", weight: "20grams", scienceName: "", nutrition: "manganese, potassium and vitamin C")]
+    let potatos = [Potato(name: "Kipfler", family:"Sweet Potato", weight: "20grams", scienceName: "", nutrition: "manganese, potassium and vitamin C", image: "potato"),
+                   Potato( name: "Kipfler", family:"Sweet Potato", weight: "20grams", scienceName: "", nutrition: "manganese, potassium and vitamin C", image: "potato")]
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {

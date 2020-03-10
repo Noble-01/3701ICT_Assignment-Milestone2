@@ -27,7 +27,7 @@ struct ContentView: View {
                 .lineLimit(nil)
                 .padding(.bottom, 15.0)
             //display the image called "potato" in the Assets folder
-            Image("potato")
+            Image(potato.image)
                 .resizable()
                 .padding(.vertical, 15.0)
                 .frame(width: 299.0, height: 300.0)
@@ -72,6 +72,6 @@ struct ContentView_Previews: PreviewProvider {
     //link the struct to the static view
     //creats the object with the following parameters
     static var previews: some View {
-        ContentView(potato: Potato(name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C"))
+        ContentView(potato: Potato( name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato"))
     }
 }

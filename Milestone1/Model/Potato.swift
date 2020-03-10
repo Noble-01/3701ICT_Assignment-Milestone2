@@ -14,13 +14,15 @@ struct Potato : Identifiable{
     let family:String
     let weight: String
     let nutrition:String
+    let image:String
 
     
-    init(name:String, family:String, weight:String, scienceName:String, nutrition:String) {
+    init(name:String, family:String, weight:String, scienceName:String, nutrition:String, image: String) {
         self.name = name
         self.family  = family
         self.weight = weight
         self.scienceName = scienceName
         self.nutrition = nutrition
+        self.image = image
     }
 }
