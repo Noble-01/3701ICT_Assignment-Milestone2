@@ -23,11 +23,14 @@ struct ListView: View {
                     .padding(.vertical, 5.0)
                     .frame(width: 80.0, height: 80.0)
                     .shadow(radius: 10)
-                        .scaledToFit()
-                        Text(potato.name).fontWeight(.bold)
-                        Text(potato.scienceName)                .font(.subheadline)
-                        .fontWeight(.light)
-                        .italic()
+                    .scaledToFit()
+                        
+                    Text(potato.name).fontWeight(.bold)
+                    Text(potato.scienceName)
+                    .font(.subheadline)
+                    .fontWeight(.light)
+                    .italic()
+                    .frame(maxWidth: .infinity, alignment: .trailing)
                         
  
                     }
