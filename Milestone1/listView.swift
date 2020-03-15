@@ -9,15 +9,17 @@
 import SwiftUI
 
 struct ListView: View {
-    //links the struct potato so that objects can use its parameters
+    ///links the struct potato so that objects can use its parameters within the array
     var potatos: [Potato]
     
     var body: some View {
         NavigationView{
-            
+       ///creates the list that utalises the arrau of potato information
         List(potatos){potato in
+            ///creates a for loop to run through the array with the var potato
             NavigationLink(destination: ContentView(potato: potato)){
                 Section{
+                    ///places the elements in a single line
                     HStack(){
                     Image(potato.image).resizable()
                     .padding(.vertical, 5.0)
@@ -31,24 +33,20 @@ struct ListView: View {
                     .fontWeight(.light)
                     .italic()
                     .frame(maxWidth: .infinity, alignment: .trailing)
-                        
- 
+                        }
                     }
-
-                    
-                }
-            }.navigationBarTitle(Text("Potatos"))
+                ///Title of navigation
+                }.navigationBarTitle(Text("Potatos"))
             }
-            
-        }
         }
     }
+}
 
 struct ListView_Previews: PreviewProvider {
-    //link the struct to the static view
-    //creats the object with the following parameters
+    ///link the struct to the static view
+    ///creats the object with the following parameters
     static var previews: some View {
         ListView(potatos: [Potato( name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato"),
-       Potato( name: "Vitelotte", family:"Starch Potato", weight: "300grams", scienceName: "Solanum Vitelotte", nutrition: "protien, potassium and vitamin C", image: "potato1")])
+            Potato( name: "Vitelotte", family:"Starch Potato", weight: "300grams", scienceName: "Solanum Vitelotte", nutrition: "protien, potassium and vitamin C", image: "potato1")])
     }
 }
