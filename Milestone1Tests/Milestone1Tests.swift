@@ -50,7 +50,9 @@ class Project1Tests: XCTestCase {
     }
 
     func testArray(){
+        ///created array for potato class
         let potato: [Potato] = [Potato(name:"Kipfler", family:"Sweet Potato", weight:"20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato")]
+        ///testing if array has anything inisde it
         XCTAssert((potato as Any)is [Potato])
     }
     
