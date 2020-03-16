@@ -50,7 +50,8 @@ class Project1Tests: XCTestCase {
     }
 
     func testArray(){
-    
+        let potato: [Potato] = [Potato(name:"Kipfler", family:"Sweet Potato", weight:"20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato")]
+        XCTAssert((potato as Any)is [Potato])
     }
     
     func testPerformanceExample() {
