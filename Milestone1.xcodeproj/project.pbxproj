@@ -88,6 +88,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		B84A2CCE2421A4FE00F1095E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B84BA8C9240FFB5E000ED948 /* ContentView.swift */,
+				B84A2B572415CB620000DDA4 /* listView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B84BA8B9240FFB5E000ED948 = {
 			isa = PBXGroup;
 			children = (
@@ -111,11 +120,10 @@
 		B84BA8C4240FFB5E000ED948 /* Milestone1 */ = {
 			isa = PBXGroup;
 			children = (
-				B84A2B572415CB620000DDA4 /* listView.swift */,
+				B84A2CCE2421A4FE00F1095E /* View */,
 				B843B29A2410EED20078AE59 /* Model */,
 				B84BA8C5240FFB5E000ED948 /* AppDelegate.swift */,
 				B84BA8C7240FFB5E000ED948 /* SceneDelegate.swift */,
-				B84BA8C9240FFB5E000ED948 /* ContentView.swift */,
 				B84BA8CB240FFB5E000ED948 /* Assets.xcassets */,
 				B84BA8D0240FFB5E000ED948 /* LaunchScreen.storyboard */,
 				B84BA8D3240FFB5E000ED948 /* Info.plist */,
