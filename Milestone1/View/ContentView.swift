@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    /**
+        the follwoing code is used to display the information about the potato objects when they are selcted from the MasterView
+     */
     //links the struct potato so that objects can use its parameters
     var potato: Potato
     
@@ -70,8 +73,8 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    //link the struct to the static view
-    //creates the object with the following parameters
+    ///link the struct to the static view
+    ///creates the object with the following parameters
     static var previews: some View {
         ContentView(potato: Potato( name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato"))
     }

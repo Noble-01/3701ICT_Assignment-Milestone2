@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct MasterView: View {
+    /**
+            the following code is used to create a naviagtion view that displays all the potato objects saved into an array
+     */
     ///links the struct potato so that objects can use its parameters within the array
     var potatos: [Potato]
     
