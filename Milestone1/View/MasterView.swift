@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ListView: View {
+struct MasterView: View {
     ///links the struct potato so that objects can use its parameters within the array
     var potatos: [Potato]
     
@@ -42,11 +42,11 @@ struct ListView: View {
     }
 }
 
-struct ListView_Previews: PreviewProvider {
+struct MasterView_Previews: PreviewProvider {
     ///link the struct to the static view
     ///creats the object with the following parameters
     static var previews: some View {
-        ListView(potatos: [Potato( name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato"),
+        MasterView(potatos: [Potato( name: "Kipfler", family: "Sweet Potato", weight: "20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato"),
             Potato( name: "Vitelotte", family:"Starch Potato", weight: "300grams", scienceName: "Solanum Vitelotte", nutrition: "protien, potassium and vitamin C", image: "potato1")])
     }
 }
