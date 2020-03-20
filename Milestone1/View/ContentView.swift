@@ -11,14 +11,14 @@ import SwiftUI
 struct ContentView: View {
     /**
         the follwoing code is used to display the information about the potato objects when they are selcted from the MasterView
+        links the struct potato so that objects can use its parameters
      */
-    //links the struct potato so that objects can use its parameters
     var potato: Potato
     
     var body: some View {
-        //formats all text and images in a vertical stack
+        ///formats all text and images in a vertical stack
         VStack(alignment: .center) {
-            //display the name for the object on the screen
+            ///display the name for the object on the screen
             Text(potato.name)
                 .font(.title)
                 .fontWeight(.bold)
@@ -29,7 +29,7 @@ struct ContentView: View {
                 .italic()
                 .lineLimit(nil)
                 .padding(.bottom, 15.0)
-            //display the image called "potato" in the Assets folder
+            ///display the image called "potato" in the Assets folder
             Image(potato.image)
                 .resizable()
                 .padding(.vertical, 15.0)
@@ -39,7 +39,7 @@ struct ContentView: View {
                 .scaledToFit()
         
             HStack(alignment: .center) {
-                //display the following elements horizontally
+                ///display the following elements horizontally
                 VStack(alignment: .trailing){
                     Text("Family:").fontWeight(.bold).multilineTextAlignment(.center)
                         .padding(.bottom, 10.0)

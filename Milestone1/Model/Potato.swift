@@ -5,7 +5,7 @@
 //  Created by Zac Cripps on 5/3/20.
 //  Copyright © 2020 Zac Cripps. All rights reserved.
 //
-//the struct contains all the parameters that make for the objects in "Potato"
+///the struct contains all the parameters that make for the objects in "Potato"
 import Foundation
 struct Potato : Identifiable{
     ///A class of types whose instances hold the value of an entity with stable identity
@@ -25,6 +25,7 @@ struct Potato : Identifiable{
     let image:String
 
     ///initialize the attributes of the class
+    ///if this is not present then the class cannot create objects
     init(name:String, family:String, weight:String, scienceName:String, nutrition:String, image: String) {
         self.name = name
         self.family  = family

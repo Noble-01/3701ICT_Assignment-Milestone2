@@ -8,21 +8,23 @@
 
 import XCTest
 @testable import Milestone1
-
+/**
+ Usually I would not seperate testing every element as it is not needed but due to the video content presented for our assignment I have done so
+ */
 class Project1Tests: XCTestCase {
+    ///Potato class is made an optional to reduce the risk of the compiler running into a fatal error
      var potato: Potato?
     override func setUp() {
 
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        /// Put setup code here. This method is called before the invocation of each test method in the class.
         potato = Potato(name:"Kipfler", family:"Sweet Potato", weight:"20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato")
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        /// Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-//functions used to test the struct and the values that are given to the variables disbaled on screen
-
-    //the struct test is broken down into individual test functions for each element on the phone
+    ///functions used to test the struct and the values that are given to the variables displayed on screen
+    ///the struct test is broken down into individual test functions for each element on the phone and in the class
     func testPotatoName(){
         let potatoName = "Kipfler"
 
@@ -50,19 +52,13 @@ class Project1Tests: XCTestCase {
     }
 
     func testArray(){
-        ///created array for potato class
+        ///created array for potato class to test
         let potato: [Potato] = [Potato(name:"Kipfler", family:"Sweet Potato", weight:"20grams", scienceName: "Solanum tuberosum", nutrition: "manganese, potassium and vitamin C", image: "potato")]
-        ///testing if array has anything inisde it
+        ///testing if array has anything inisde it and if the array is type string
         XCTAssert((potato as Any)is [Potato])
-        ///testing if array is not eqault to nil
-        XCTAssertNotNil([potato])
+        ///testing if array is not eqaul to nil which would throw a fatal error if it was
+        XCTAssertNotNil(potato)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }

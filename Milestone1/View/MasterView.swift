@@ -10,11 +10,11 @@ import SwiftUI
 
 struct MasterView: View {
     /**
-            the following code is used to create a naviagtion view that displays all the potato objects saved into an array
+    the following code is used to create a naviagtion view that displays all the potato objects saved into an array
+    links the struct potato so that objects can use its parameters within the array
      */
-    ///links the struct potato so that objects can use its parameters within the array
     var potatos: [Potato]
-    
+    ///Body is used as a var to link to the view of the content for potato objects
     var body: some View {
         NavigationView{
        ///creates the list that utalises the arrau of potato information
@@ -22,7 +22,7 @@ struct MasterView: View {
             ///creates a for loop to run through the array with the var potato
             NavigationLink(destination: ContentView(potato: potato)){
                 Section{
-                    ///places the elements in a single line
+                    ///places the elements in a single line (horizontal stack)
                     HStack(){
                     Image(potato.image).resizable()
                     .padding(.vertical, 5.0)
